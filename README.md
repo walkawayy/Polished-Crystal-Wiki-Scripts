@@ -16,7 +16,7 @@ Parses various data files from [Polished Crystal](https://github.com/Rangi42/pol
 ## Usage
 ### Running the Script
 ```sh
-python generate_learnsets.py
+python generate_wiki_pages.py
 ```
 This will parse the required `.asm` files and generate the markdown pages in place.
 
@@ -25,7 +25,7 @@ The script reads data from the following directories:
 - `../polishedcrystal/data/moves/`
 - `../polishedcrystal/data/pokemon/`
 
-Currently, `generate_learnsets.py` generates all files in place, so it's best used by copying the script
+Currently, `generate_wiki_pages.py` generates all files in place, so it's best used by copying the script
 into the Polished Crystal Wiki git folder. The script also expects the Polished Crystal codebase to be
 in the same folder named `polishedcrystal`. These should probably be passed as command line arguments
 in the future.
