@@ -98,7 +98,7 @@ def format_move_name(move_name: str):
     return move_name
 
 def get_pokemon_names_for_files(pokemon_name: str):
-    """Special name cleanup for Pokemon with periods in names and forms. Also associates shared evos attacks and egg moves."""
+    """Name cleanup for Pokemon with special characters or forms. Also associates shared evos attacks and egg moves."""
     egg_moves_name = ""
     evo_attacks_name = ""
 
@@ -196,6 +196,18 @@ def get_pokemon_names_for_files(pokemon_name: str):
         pokemon_name = "Ho-Oh"
         egg_moves_name = "HoOh"
         evo_attacks_name = "HoOh"
+    elif "tauros_paldean" == pokemon_name:
+        pokemon_name = "Taurous (Combat Breed) (Paldean)"
+        egg_moves_name = ""
+        evo_attacks_name = "TaurosPaldean"
+    elif "tauros_paldean_fire" == pokemon_name:
+        pokemon_name = "Taurous (Blaze Breed) (Paldean)"
+        egg_moves_name = ""
+        evo_attacks_name = "TaurosPaldeanFire"
+    elif "tauros_paldean_water" == pokemon_name:
+        pokemon_name = "Taurous (Aqua Breed) (Paldean)"
+        egg_moves_name = ""
+        evo_attacks_name = "TaurosPaldeanWater"
     # More general form fixes.
     elif "plain" in pokemon_name.lower():
         egg_moves_name = pokemon_name.title().replace("_", "")
