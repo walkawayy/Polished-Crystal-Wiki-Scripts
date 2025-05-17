@@ -197,15 +197,15 @@ def get_pokemon_names_for_files(pokemon_name: str):
         egg_moves_name = "HoOh"
         evo_attacks_name = "HoOh"
     elif "tauros_paldean" == pokemon_name:
-        pokemon_name = "Taurous (Combat Breed) (Paldean)"
+        pokemon_name = "Tauros (Combat Breed) (Paldean)"
         egg_moves_name = ""
         evo_attacks_name = "TaurosPaldean"
     elif "tauros_paldean_fire" == pokemon_name:
-        pokemon_name = "Taurous (Blaze Breed) (Paldean)"
+        pokemon_name = "Tauros (Blaze Breed) (Paldean)"
         egg_moves_name = ""
         evo_attacks_name = "TaurosPaldeanFire"
     elif "tauros_paldean_water" == pokemon_name:
-        pokemon_name = "Taurous (Aqua Breed) (Paldean)"
+        pokemon_name = "Tauros (Aqua Breed) (Paldean)"
         egg_moves_name = ""
         evo_attacks_name = "TaurosPaldeanWater"
     # More general form fixes.
