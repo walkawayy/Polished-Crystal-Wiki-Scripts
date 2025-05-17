@@ -113,7 +113,8 @@ def get_pokemon_names_for_files(pokemon_name: str):
     elif "mr__mime_galarian" in pokemon_name:
         pokemon_name = "Mr. Mime Galarian"
         egg_moves_name = "MimeJr"
-        evo_attacks_name = "MrRime"
+        # TODO Requires changes in Polished code because uses Rime level up moves.
+        evo_attacks_name = "MrMimeGalarian"
     elif "mr__rime" in pokemon_name:
         pokemon_name = "Mr. Rime"
         egg_moves_name = "MimeJr"
